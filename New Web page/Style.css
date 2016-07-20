@@ -1,0 +1,282 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+/************************************/
+
+nav{
+    /*Bordes redondeados*/
+    -webkit-border-radius:10px;/*Para chrome y Safari*/
+    -moz-border-radius:10px;/*Para Firefox*/
+    -o-border-radius:10px;/*Para Opera*/
+    border-radius:10px;/*El estandar por defecto*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));/*Para chrome y Safari*/
+    /*Degradados*/
+    background-image: -moz-linear-gradient(top center, #FFF, #CCC);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #CCC);/*Para Opera*/
+    background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
+    overflow:hidden;
+    padding:10px;
+    width:950px;
+}
+nav ul{
+    list-style:none;
+    margin:0 10px 0 10px;
+    padding:0;
+}
+nav ul li{
+    /*Bordes redondeados*/
+    -webkit-border-radius:5px;/*Chrome y Safari*/
+    -moz-border-radius:5px;/*Firefox*/
+    -o-border-radius:5px;/*Opera*/
+    border-radius:5px;/*Estandar por defecto*/
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    margin-right:10px;
+    text-align:center;
+    /*Sombras para texto, los mismos parametros que box-shadow*/
+    text-shadow: 0px 1px 0px #FFF;
+    float:left;
+}
+
+nav ul li:hover{
+    /*Degradado de fondo*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to( #E3E3E3));/*Chrome y Safari*/
+    background-image: -moz-linear-gradient(top center, #FFF, #E3E3E3);/*Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #E3E3E3);/*Opera*/
+    background-image: linear-gradient(top, #FFF, #E3E3E3);/*Estandar por defecto*/
+    /*Sombras*/
+    -webkit-box-shadow:  1px -1px 0px #999;/*Chrome y Safari*/
+    -moz-box-shadow:  1px -1px 0px #999;/*Firefox*/
+    -o-box-shadow:  1px -1px 0px #999;/*Opera*/
+    box-shadow:  1px -1px 0px #999;/*Estandar por defecto*/
+    border:1px solid #E3E3E3;
+}
+nav ul li a{
+    color:#32CD32;
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    /*Transiciones*/
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
+}
+nav ul li a:hover {
+    color:#000;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+#centro{
+    text-align: center;
+}
+body{
+	background-color: black;
+}
+
+#menuImage{
+    text-decoration: none;
+}
+.clear{
+	clear:both;
+}
+
+#wrapper{
+	width: 960px;
+	margin: 0 auto;
+	color: white;
+}
+
+
+
+
+
+aside{
+	/*Bordes redondeados*/
+    -webkit-border-radius:10px;/*Para chrome y Safari*/
+    -moz-border-radius:10px;/*Para Firefox*/
+    -o-border-radius:10px;/*Para Opera*/
+    border-radius:0px 10px 10px 0px;/*El estandar por defecto*/
+	border:solid 1px #32CD32;
+	float: right;
+	width: 200px;
+	height: 450px;
+	margin: 3px 0px 3px 3px;
+}
+
+
+
+#contenido{
+	width: 750px;
+	height: 450px;
+	border:1px solid #32CD32;
+	float:left;
+	margin: 3px 0px 3px 3px;
+}
+
+
+.repetitivo{
+	width: 150px;
+	float: left;
+	margin: 30px;
+	margin-left: 65px;
+	padding: 10px;
+    border:2px solid green;
+
+}
+
+#slide{
+	width:960px;
+	height: 300px;
+	margin: 3px;
+	background-image: url("Imagenes/Ziu_box_page.jpg");
+	background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+#slide:hover{
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+#slide img{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+}
+table tr td p{
+	text-align: center;
+}
+
+#headColor{
+	color: #32CD32;
+}
+content div h1{
+	padding: 0px 10px 0px 10px;
+	border-bottom: 1px solid white;
+	margin-bottom: 12px;
+}
+
+table{
+	width: 100%;
+	text-align: center;
+}
+
+table tr th{
+	/*margin: 10px;
+	padding: 5px;*/
+	font-size: 30px;
+	text-align: center;
+	/*border-bottom: 2px solid #32CD32;*/
+
+}
+
+table tr td{
+	/*margin: 15px;
+	padding: 10px;*/
+	text-align: center;
+	font-size: 15px;
+	border: 1px solid white;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+
+    }
+footer{
+	/*Bordes redondeados*/
+    -webkit-border-radius:10px;/*Para chrome y Safari*/
+    -moz-border-radius:10px;/*Para Firefox*/
+    -o-border-radius:10px;/*Para Opera*/
+    border-radius:0px 0px 10px 10px;/*El estandar por defecto*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));/*Para chrome y Safari*/
+    /*Degradados*/
+    background-image: -moz-linear-gradient(top center, #FFF, #CCC);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #CCC);/*Para Opera*/
+    background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
+    overflow:hidden;
+    padding:10px;
+    width:950px;
+    color: Darkgrey;
+    text-align: center;
+    font-family: cursive;
+    font-size: 12px;
+}
+section{
+	width: 100%;
+}
+
+#degradado {
+background: -webkit-linear-gradient(left, black , gray); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(right, black , gray); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(right, black , gray); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to right, black , gray); /* Standard syntax */
+}
+
+section div div p{
+	margin-left: 30px;
+	float: left;
+
+}
+
+.RepetitivoSection{
+	float: left;
+	margin :20px;
+	margin-left: 40px;
+	padding: 20px;
+	padding-left: 30px;
+	
+}
+.foo {
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 100%;
+}
+
+.green{
+	background: #32CD32;
+}
+.blue{
+background: #5F9EA0;
+}
+.pink{
+background: pink;
+}
+.red{
+	background: red;
+}
+/*
+.h1_hover{
+	font-size: 30px;
+	font-family: cursive;
+	text-align: center; 
+}
+.p_hover{
+	font-family: sans-serif;
+	font-size: 12px;
+	text-align: center;
+}*/
